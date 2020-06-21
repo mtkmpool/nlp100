@@ -1,3 +1,3 @@
 str = "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
-l = str.split()
-print(l)
+result =[len (w) - w.count(',')-w.count('.') for w in str.split()]
+print(result)
