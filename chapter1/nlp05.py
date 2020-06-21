@@ -20,6 +20,3 @@ def n_gram_chara (str, n):
 
 print(n_gram_word("I am an NLPer",2))
 print(n_gram_chara("I am an NLPer",2))
-
-
-
