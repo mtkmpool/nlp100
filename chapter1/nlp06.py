@@ -1,21 +1,20 @@
 
-str1 = "paraparaparadise"
-str2 = "paragraph"
+STR1 = "paraparaparadise"
+STR2 = "paragraph"
 
-def n_gram_chara (str, n):
+def n_gram_chara(input_str, num):
     result = []
-    for i in range(len(str)- n + 1):
-        result.append(str[i: i + n])
-    
+    for i in range(len(input_str)- num + 1):
+        result.append(input_str[i: i + num])
     return result
 
-X = set((n_gram_chara(str1,2)))
-Y = set((n_gram_chara(str2,2)))
+X = set((n_gram_chara(STR1, 2)))
+Y = set((n_gram_chara(STR2, 2)))
 
 # print (X)
 # print (Y)
-print (X | Y)
-print (X & Y)
-print (X - Y)
-print ('se' in (X))
-print ('se' in (Y))
+print(X | Y)
+print(X & Y)
+print(X - Y)
+print('se' in X)
+print('se' in Y)

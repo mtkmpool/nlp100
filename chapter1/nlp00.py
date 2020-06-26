@@ -1,3 +1,3 @@
-org_str = "stressed"
-new_str = "".join(list(reversed(org_str)))
-print (new_str)
+ORG_STR = "stressed"
+NEW_STR = "".join(list(reversed(ORG_STR)))
+print(NEW_STR)

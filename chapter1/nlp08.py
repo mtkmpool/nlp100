@@ -1,13 +1,14 @@
-
-def cipher (text):
-    result = ""
-    for w in text:
-        if w.islower():
-            result = (219 - ord(w))
+def cipher(target):
+    output = ""
+    for char in target:
+        if char.islower():
+            output += chr(219 - ord(char))
         else:
-            result = w
-    
-    return result
+            output += char
+    return output
 
-text = "I am a one of the member of smmlab"
-print (cipher(text))
+print("文字列を入力：")
+result = cipher(input())
+
+print("暗号化: {}".format(result))
+print("複合化: {}".format(cipher(result)))
